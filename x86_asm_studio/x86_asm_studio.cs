@@ -27,8 +27,8 @@ namespace x86_asm_studio
             int lineFstRelativeIdx = this.richTextBoxEditor.GetLineFromCharIndex(chFstAbsoluteIdx);
             Point chFstRelativePos = this.richTextBoxEditor.GetPositionFromCharIndex(chFstAbsoluteIdx);
 
-            Point editorBottomRightPos = new Point(editorTopLeftPos.X, 
-                editorTopLeftPos.Y + richTextBoxEditor.Height);
+            Point editorBottomRightPos = new Point(
+                editorTopLeftPos.X, editorTopLeftPos.Y + richTextBoxEditor.Height);
             int chLstRelativeIdx = this.richTextBoxEditor.GetCharIndexFromPosition(editorBottomRightPos);
             int lineLstRelativeIdx = this.richTextBoxEditor.GetLineFromCharIndex(chLstRelativeIdx);
             Point chLstRelativePos = this.richTextBoxEditor.GetPositionFromCharIndex(chLstRelativeIdx);
